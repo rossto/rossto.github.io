@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bizops Consulting</title>
+    <title>Enforced Solutions</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -46,7 +46,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Bizops</a>
+            <a class="navbar-brand page-scroll" href="#page-top">Enforced Solutions</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,14 +69,18 @@
 </nav>
 
   <header>
+	<div id="particles-js" style="padding-top:50px;">
     <div class="header-content">
         <div class="header-content-inner">
-            <h1>Bizops</h1>
+        	
+            <img src="img/logo_transparent.png" style="height:400px;width:auto;">
             <hr>
             <p>We know things.</p>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+        	
         </div>
     </div>
+	</div>
 </header>
 
   <section class="bg-primary" id="about">
@@ -176,7 +180,7 @@
 
   <!-- jQuery -->
 <script src="js/jquery.js"></script>
-
+<script src="js/particle.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
@@ -188,6 +192,11 @@
 <!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>
 
+<script>
+	particlesJS.load('particles-js', 'js/particles.json', function() {
+  		console.log('callback - particles.js config loaded');
+	});
+</script>
 </body>
 
 </html>
