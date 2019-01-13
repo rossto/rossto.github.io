@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="google-site-verification" content="9U1hKW73bBOhCFXTQur6CrAQgKY2DyNLDXw4L02kZG8" />
 
     <title>Enforced Solutions</title>
 
@@ -213,7 +214,7 @@
 	function postLead(){
 		var emailAddress = document.getElementById("email").value;
 		console.log('email : ', emailAddress);
-		fetch('https://vfe22x8qx7.execute-api.us-east-1.amazonaws.com/prod/',
+		fetch('https://h81xibvevg.execute-api.us-east-1.amazonaws.com/prod',
 			{
 				method:'post',
 				//mode: 'no-cors',
@@ -222,11 +223,14 @@
 			  		'Content-Type' : 'application/json'
 			  	},
 				body:
-					'{"email":'+emailAddress+'}'
+					{ email: "test@test.com"}
+			})
+			.then(function(response){
+				return response.json();
 			})
 			.then(function(response){
 				console.log(response);
-			}
+        	}
 		);
 		return;
 	}
